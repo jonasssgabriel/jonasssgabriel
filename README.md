@@ -7,11 +7,11 @@
 ---
 
 ### Sobre mim
-- Graduando em **Ciência da Computação**
-- Interesse em **UI Design** e **Front-end**
-- Conhecimento em **Python**, **Java** e **JavaScript**
-- Em constante aprendizado de tecnologias modernas
-- Aberto a colaborações e novos desafios
+- Graduando em **Ciência da Computação**  
+- Interesse em **UI Design** e **Front-end**  
+- Conhecimento em **Python**, **Java** e **JavaScript**  
+- Em constante aprendizado de tecnologias modernas  
+- Aberto a colaborações e novos desafios  
 
 ---
 
@@ -25,12 +25,13 @@
 ---
 
 ### Estatísticas do GitHub
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=tokyonight&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=tokyonight" />
-</div>
+<p align="center">
+  <!-- Espelho para evitar erro de limite da API -->
+  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
+  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=tokyonight" alt="Top Languages" />
+</p>
 
 ---
 
 ### Contato
-- **jonassgabriel433@gmail.com**
+- **Email:** jonassgabriel433@gmail.com
