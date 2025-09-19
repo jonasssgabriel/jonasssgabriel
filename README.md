@@ -9,7 +9,7 @@
 ### Sobre mim
 - Graduando em **Ciência da Computação**  
 - Interesse em **UI Design** e **Front-end**  
-- Conhecimento em **Python**, **Java** e **JavaScript**  
+- Conhecimento em **Python**, **Java**, **JavaScript**, **PHP**, **TypeScript**, **CSS**, **Git**  
 - Em constante aprendizado de tecnologias modernas  
 - Aberto a colaborações e novos desafios  
 
@@ -20,6 +20,10 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
 ---
