@@ -1,6 +1,6 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=120&section=header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=facc15&height=120&section=header"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=57d1fd&size=36&center=true&vCenter=true&width=1000&lines=Olá,+meu+nome+é+Jonas+Gabriel;Estudante+de+Ciência+da+Computação;Front-end+·+UI%2FUX+·+Web+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=facc15&size=36&center=true&vCenter=true&width=1000&lines=Olá,+meu+nome+é+Jonas+Gabriel;Estudante+de+Ciência+da+Computação;Front-end+·+UI%2FUX+·+Web+Developer)](https://git.io/typing-svg)
 
 <br>
 
@@ -65,14 +65,14 @@ Tenho experiência com projetos acadêmicos completos envolvendo **CRUD**, **API
 ## Estatísticas
 
 ### Atividade
-[![GitHub Streak](https://streak-stats.demolab.com?user=jonasssgabriel&theme=dark&hide_border=true&border_radius=8&card_width=1000&background=0D1117&ring=57d1fd&fire=57d1fd&currStreakNum=57d1fd&sideNums=57d1fd&currStreakLabel=57d1fd&sideLabels=57d1fd&dates=9da9b6)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=jonasssgabriel&theme=dark&hide_border=true&border_radius=8&card_width=1000&background=0D1117&ring=facc15&fire=facc15&currStreakNum=facc15&sideNums=facc15&currStreakLabel=facc15&sideLabels=facc15&dates=fbbf24)](https://git.io/streak-stats)
 
 ### Visão Geral
 <div style="display:flex; gap:40px;">
-  <img src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=57d1fd&icon_color=57d1fd&text_color=9da9b6&hide_border=true&card_height=200"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=57d1fd&text_color=9da9b6&hide_border=true&card_height=200"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=facc15&icon_color=facc15&text_color=fbbf24&hide_border=true&card_height=200"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=facc15&text_color=fbbf24&hide_border=true&card_height=200"/>
 </div>
 
 <br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=120&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=facc15&height=120&section=footer"/>
