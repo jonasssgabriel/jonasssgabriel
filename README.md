@@ -1,82 +1,69 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=120&section=header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=110"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=57d1fd&size=38&center=true&vCenter=true&width=1000&lines=Olá,+meu+nome+é+Jonas+Gabriel+:%29;Estudante+de+Ciência+da+Computação;Front-end,+UI%2FUX+e+Web+Developer)](https://git.io/typing-svg)
+<h1 align="center">Jonas Gabriel</h1>
 
----
+<p align="center">
+Estudante de Ciência da Computação · Front-end · UI/UX · Web Development
+</p>
 
-## 👨‍💻 Sobre Mim
-
-🎓 Estudante de **Ciência da Computação**  
-🎨 Apaixonado por **UI/UX Design** e **desenvolvimento Front-end**  
-🌐 Experiência com **projetos web completos (Front + Back)**  
-🧠 Sempre buscando escrever código limpo e interfaces bem pensadas  
-
-Aqui no GitHub você vai encontrar projetos acadêmicos, experimentações e aplicações práticas focadas em aprendizado real, organização e boas práticas.
-
----
-
-## 📫 Contatos
-
-<div>
+<p align="center">
 <a href="mailto:jonassgabriel433@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white"/>
 </a>
 <a href="https://github.com/jonasssgabriel">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
 </a>
+</p>
+
+<br>
+
+## Sobre
+
+Sou estudante de **Ciência da Computação**, com foco em **desenvolvimento front-end** e **design de interfaces (UI/UX)**.  
+Tenho experiência com projetos acadêmicos completos envolvendo **CRUD**, **APIs**, **bancos de dados** e boas práticas de organização de código.
+
+Meu objetivo é evoluir constantemente como desenvolvedor, construindo aplicações funcionais, bem estruturadas e com boa experiência de uso.
+
+<br>
+
+## Tecnologias
+
+**Linguagens**
+```
+Python · Java · JavaScript · TypeScript · PHP
+```
+
+**Front-end**
+```
+HTML · CSS · React · Vite · Tailwind CSS
+```
+
+**Back-end & Dados**
+```
+Node.js · Express · SQLite · MongoDB
+```
+
+**Ferramentas**
+```
+Git · GitHub · VS Code · NetBeans
+```
+
+<br>
+
+## Estatísticas
+
+<div align="center">
+
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&hide_title=true&hide_border=true&theme=transparent"/>
+
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&hide_border=true&theme=transparent"/>
+
 </div>
 
----
+<br>
 
-## 🧠 Minhas Habilidades
+<p align="center">
+<img src="https://streak-stats.demolab.com?user=jonasssgabriel&hide_border=true&theme=transparent"/>
+</p>
 
-### 🔥 Main Stack
-<div>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-</div>
-
-### 🎨 Front-end
-<div>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
-<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-</div>
-
-### 🧩 Back-end & Banco de Dados
-<div>
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/>
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-</div>
-
-### 🛠️ Ferramentas
-<div>
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-<img src="https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white"/>
-</div>
-
----
-
-## 📊 Meu GitHub
-
-### 🔥 Streak
-[![GitHub Streak](https://streak-stats.demolab.com?user=jonasssgabriel&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-### 📈 Estatísticas
-<div style="display:flex; gap:20px;">
-<img src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=tokyonight&hide_border=true" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
-</div>
-
----
-
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=120&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=57d1fd&height=90&section=footer"/>
