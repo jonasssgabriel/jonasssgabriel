@@ -1,14 +1,14 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=180&section=header&text=Jonas%20Gabriel&fontSize=42&fontColor=0d1117&fontAlignY=45&desc=Business%20Intelligence%20·%20Data%20Analysis%20·%20UI/UX&descAlignY=65&descSize=18"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=260&section=header&text=Jonas%20Gabriel&fontSize=42&fontColor=0d1117&fontAlignY=30&desc=Business%20Intelligence%20·%20Data%20Analysis%20·%20UI/UX&descAlignY=45&descSize=18"/>
 
 <br>
 
 ## Sobre
 
-Estudante de Ciência da Computação com foco em Business Intelligence, dashboards e análise de dados com apoio de IA. Tenho interesse forte em Power BI e em transformar dados brutos em painéis visuais claros e funcionais, unindo isso a uma boa base de UI/UX e experiência com projetos completos envolvendo CRUD, APIs e bancos de dados.
+Estudante de Ciência da Computação, curioso por natureza e sempre disposto a aprender coisas novas na área de tecnologia. Já passei por front-end, back-end, UI/UX e agora venho me dedicando bastante a dados — principalmente Power BI, onde tenho mais facilidade e venho gostando cada vez mais de trabalhar.
 
 Foco atual:
-- Power BI e KNIME — modelagem de dados e storytelling visual com dashboards
-- Aplicação de IA para análise, automação e enriquecimento de dados
+- Power BI e KNIME, construindo dashboards e explorando modelagem de dados
+- Uso de IA como apoio na análise e automação de dados
 - Engenharia Inteligente de Dados e Redes de Computadores
 
 <br>
@@ -34,7 +34,6 @@ Foco atual:
 <img src="https://img.shields.io/badge/KNIME-FDB515?style=for-the-badge&logo=knime&logoColor=000"/>
 <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
 </div>
 
 **Linguagens**
