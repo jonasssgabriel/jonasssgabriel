@@ -4,7 +4,7 @@
 
 ## Sobre
 
-Estudante de Ciência da Computação, curioso por natureza e sempre disposto a aprender coisas novas na área de tecnologia. Já passei por front-end, back-end, UI/UX e agora venho me dedicando bastante a dados — principalmente Power BI, onde tenho mais facilidade e venho gostando cada vez mais de trabalhar.
+Estudante de Ciência da Computação, curioso por natureza e sempre disposto a aprender coisas novas na área de tecnologia. Já passei por front-end, back-end, UI/UX e agora venho me dedicando bastante a dados, principalmente Power BI, onde tenho mais facilidade e venho gostando cada vez mais de trabalhar.
 
 Foco atual:
 - Power BI e KNIME, construindo dashboards e explorando modelagem de dados
@@ -87,7 +87,7 @@ Foco atual:
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jonasssgabriel&theme=transparent&hide_border=true&ring=fde047&fire=fde047&currStreakLabel=fde047"/>
+  <img src="https://streak-stats.demolab.com/?user=jonasssgabriel&theme=transparent&hide_border=true&ring=fde047&fire=fde047&currStreakLabel=fde047"/>
 </div>
 
 <div align="center">
