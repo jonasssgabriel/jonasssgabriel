@@ -82,8 +82,8 @@ Foco atual:
 ## Estatísticas
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=fde047&text_color=fef08a&hide_border=true"/>
+  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/>
+  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=fde047&text_color=fef08a&hide_border=true"/>
 </div>
 
 <div align="center">
@@ -91,7 +91,7 @@ Foco atual:
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jonasssgabriel&theme=onedark&no-frame=true&column=7&margin-w=8&margin-h=8"/>
+  <img src="https://github-profile-trophy-liard-delta.vercel.app/?username=jonasssgabriel&theme=onedark&no-frame=true&column=7&margin-w=8&margin-h=8"/>
 </div>
 
 <br>
