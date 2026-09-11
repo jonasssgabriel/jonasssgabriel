@@ -78,19 +78,6 @@ Gosto de fazer as duas pontas: montar a interface do dashboard **e** analisar os
 
 <br>
 
-## Projetos em destaque
-
-<div align="center">
-
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=analise-vendas-knime&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=associacao-data-mining&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=mapa-do-armazenamento&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=MongoDB-Jonas-Lucas&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-
-</div>
-
-<br>
-
 ## Foco atual
 
 - Power BI e KNIME, construindo dashboards e explorando modelagem de dados
@@ -109,8 +96,8 @@ Gosto de fazer as duas pontas: montar a interface do dashboard **e** analisar os
 
 <table align="center">
 <tr>
-<td><img src="https://github-readme-stats-eight-theta.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/></td>
-<td><img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=fde047&text_color=fef08a&hide_border=true"/></td>
+<td><img src="https://github-readme-stats-eight-theta.vercel.app/api?username=jonasssgabriel&show_icons=true&bg_color=0d1117&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/></td>
+<td><img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&bg_color=0d1117&title_color=fde047&text_color=fef08a&hide_border=true"/></td>
 </tr>
 </table>
 
