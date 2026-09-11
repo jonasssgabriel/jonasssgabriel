@@ -16,25 +16,9 @@
 
 ## Sobre
 
-Estudante de Ciência da Computação, curioso por natureza. Já passei por front-end, back-end e UI/UX, e hoje foco em transformar dados em decisão através de **Power BI** e **KNIME**.
+Estudante de Ciência da Computação em Palmas (TO). Já passei por front-end, back-end e UI/UX, mas hoje é com dados que eu mais gosto de trabalhar — principalmente **Power BI** e **KNIME**, construindo dashboards e tentando entender o que os números realmente mostram.
 
-Gosto de fazer as duas pontas do dashboard: montar a interface bonita **e** mergulhar nos dados por trás pra tirar uma conclusão de verdade.
-
-<br>
-
-## Nível nas principais ferramentas
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/Power_BI-80%25-F2C811?style=for-the-badge&logo=powerbi&logoColor=000"/>
-<img src="https://img.shields.io/badge/KNIME-70%25-FDB515?style=for-the-badge&logo=knime&logoColor=000"/>
-<img src="https://img.shields.io/badge/An%C3%A1lise_de_Dados-75%25-fde047?style=for-the-badge&logoColor=000"/>
-<img src="https://img.shields.io/badge/SQL-75%25-4479A1?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/Front--end_%2F_UI-65%25-38bdf8?style=for-the-badge&logoColor=000"/>
-<img src="https://img.shields.io/badge/Python-60%25-3776AB?style=for-the-badge&logo=python&logoColor=fde047"/>
-<img src="https://img.shields.io/badge/Figma-55%25-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-
-</div>
+Gosto de fazer as duas pontas: montar a interface do dashboard **e** analisar os dados por trás pra tirar uma conclusão real, não só um gráfico bonito.
 
 <br>
 
@@ -44,50 +28,50 @@ Gosto de fazer as duas pontas do dashboard: montar a interface bonita **e** merg
 <tr>
 <td valign="top" width="20%"><b>Dados & BI</b></td>
 <td valign="top">
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=000"/>
-<img src="https://img.shields.io/badge/KNIME-FDB515?style=flat-square&logo=knime&logoColor=000"/>
-<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power%20BI-fde047?style=flat-square&logo=powerbi&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/KNIME-fde047?style=flat-square&logo=knime&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/SQL-fde047?style=flat-square&logo=mysql&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/Excel-fde047?style=flat-square&logo=microsoftexcel&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/Pandas-fde047?style=flat-square&logo=pandas&logoColor=0d1117"/>
 </td>
 </tr>
 <tr>
 <td valign="top"><b>Design & Front-end</b></td>
 <td valign="top">
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
-<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+<img src="https://img.shields.io/badge/Figma-fde047?style=flat-square&logo=figma&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/HTML5-fde047?style=flat-square&logo=html5&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/CSS3-fde047?style=flat-square&logo=css3&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/React-fde047?style=flat-square&logo=react&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/Vite-fde047?style=flat-square&logo=vite&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/TailwindCSS-fde047?style=flat-square&logo=tailwindcss&logoColor=0d1117"/>
 </td>
 </tr>
 <tr>
 <td valign="top"><b>Linguagens</b></td>
 <td valign="top">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-fde047?style=flat-square&logo=python&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/Java-fde047?style=flat-square&logo=openjdk&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/JavaScript-fde047?style=flat-square&logo=javascript&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/TypeScript-fde047?style=flat-square&logo=typescript&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/PHP-fde047?style=flat-square&logo=php&logoColor=0d1117"/>
 </td>
 </tr>
 <tr>
 <td valign="top"><b>Back-end & Dados</b></td>
 <td valign="top">
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/>
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-fde047?style=flat-square&logo=nodedotjs&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/Express-fde047?style=flat-square&logo=express&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/SQLite-fde047?style=flat-square&logo=sqlite&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/MongoDB-fde047?style=flat-square&logo=mongodb&logoColor=0d1117"/>
 </td>
 </tr>
 <tr>
 <td valign="top"><b>Ferramentas</b></td>
 <td valign="top">
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"/>
-<img src="https://img.shields.io/badge/NetBeans-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-fde047?style=flat-square&logo=git&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/GitHub-fde047?style=flat-square&logo=github&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/VS%20Code-fde047?style=flat-square&logo=visualstudiocode&logoColor=0d1117"/>
+<img src="https://img.shields.io/badge/NetBeans-fde047?style=flat-square&logo=apachenetbeanside&logoColor=0d1117"/>
 </td>
 </tr>
 </table>
@@ -98,10 +82,10 @@ Gosto de fazer as duas pontas do dashboard: montar a interface bonita **e** merg
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=jonasssgabriel&repo=analise-vendas-knime&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=jonasssgabriel&repo=associacao-data-mining&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=jonasssgabriel&repo=mapa-do-armazenamento&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=jonasssgabriel&repo=MongoDB-Jonas-Lucas&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=analise-vendas-knime&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=associacao-data-mining&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=mapa-do-armazenamento&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=jonasssgabriel&repo=MongoDB-Jonas-Lucas&theme=transparent&title_color=fde047&text_color=fef08a&icon_color=fde047&hide_border=true"/>
 
 </div>
 
@@ -119,14 +103,14 @@ Gosto de fazer as duas pontas do dashboard: montar a interface bonita **e** merg
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=jonasssgabriel&bg_color=0d1117&color=fde047&line=fde047&point=fde68a&area=true&hide_border=true"/>
+<img width="100%" src="https://readme-activity-graph.vercel.app/graph?username=jonasssgabriel&bg_color=0d1117&color=fde047&line=fde047&point=fde68a&area=true&hide_border=true"/>
 
 </div>
 
 <table align="center">
 <tr>
-<td><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/></td>
-<td><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=fde047&text_color=fef08a&hide_border=true"/></td>
+<td><img src="https://github-readme-stats-eight-theta.vercel.app/api?username=jonasssgabriel&show_icons=true&theme=transparent&title_color=fde047&icon_color=fde047&text_color=fef08a&hide_border=true"/></td>
+<td><img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=jonasssgabriel&layout=compact&theme=transparent&title_color=fde047&text_color=fef08a&hide_border=true"/></td>
 </tr>
 </table>
 
