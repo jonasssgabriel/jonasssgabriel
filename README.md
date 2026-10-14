@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&pause=1200&color=FDE047&background=00000000&center=true&vCenter=true&width=560&height=40&lines=Estudante+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o;Intelig%C3%AAncia+artificial+e+agentes;Experi%C3%AAncia+do+usu%C3%A1rio+e+design"/>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&pause=1200&color=FDE047&background=00000000&center=true&vCenter=true&width=560&height=40&lines=Intelig%C3%AAncia+artificial+e+agentes;Experi%C3%AAncia+do+usu%C3%A1rio+e+design;Desenvolvimento+web+e+an%C3%A1lise+de+dados"/>
 
 </div>
 
