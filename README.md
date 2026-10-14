@@ -1,34 +1,37 @@
-<img src="assets/header.svg" width="100%" alt="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Hoje o foco é IA, agentes e workflows, mas o que mais me prende é experiência e design."/>
+<div align="center">
+
+<img src="assets/header.svg" width="100%" alt="Jonas Gabriel. IA, UX, dados."/>
 
 <br>
 
-## Mexendo agora
-
-IA é o que mais me ocupa hoje: agentes, workflows e descobrir o melhor jeito de usar isso em projeto de verdade. Onde ajuda, onde atrapalha, o que vale automatizar e o que é melhor deixar na mão.
-
-Mesmo assim, o que mais me atrai é a parte de experiência e design. Gosto de pensar em como a coisa é de usar, não só se ela funciona, e costumo desenhar a tela no Figma antes de codar. Por fora disso, Power BI e KNIME pra dados e um pouco de redes de computadores.
-
-## Coisas que fiz
-
-- [chat-tcp-multiusuario](https://github.com/jonasssgabriel/chat-tcp-multiusuario): chat em Java com socket, pool de threads e protocolo JSON
-- [aplicacao-tres-camadas-docker](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker): front no Nginx, API, Redis e proxy reverso, tudo em Docker com rede isolada
-- [analise-vendas-knime](https://github.com/jonasssgabriel/analise-vendas-knime): análise de vendas no KNIME com Python
-- [associacao-data-mining](https://github.com/jonasssgabriel/associacao-data-mining): regras de associação em mineração de dados
-- [sort-lab](https://github.com/jonasssgabriel/sort-lab): compara algoritmos de ordenação em tipos diferentes de entrada
-- [mapa-do-armazenamento](https://github.com/jonasssgabriel/mapa-do-armazenamento): scanner em Python que mostra pra onde foi o espaço do disco
-- [MongoDB-Jonas-Lucas](https://github.com/jonasssgabriel/MongoDB-Jonas-Lucas): lista de tarefas com CRUD, tags e comentários, em Python e MongoDB Atlas
-- [pdv-web](https://github.com/jonasssgabriel/pdv-web): PDV web com impressão térmica
-
-## O que eu uso
-
-Mais Java, TypeScript, PHP e Python. Pra tela, React com Tailwind e Vite, e Figma quando preciso desenhar antes. Pra API, Node com Express. Pra guardar dado, SQLite e MongoDB. Pra analisar, Power BI, KNIME, SQL e Pandas. Git pra tudo.
+Estudante de Ciência da Computação em Palmas, TO.<br>
+Foco atual em IA e agentes, com interesse em experiência e design.
 
 <br>
 
-<img src="assets/commits.svg" width="100%" alt="Gráfico dos commits do último ano"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg">
+  <img alt="Pac-Man comendo meus commits" src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg" width="100%"/>
+</picture>
 
 <br>
 
-## Contato
+<img src="https://skillicons.dev/icons?i=python,java,ts,react,nodejs,docker,mongodb,figma,powerbi,git&theme=dark" alt="Stack"/>
 
-jonassgabriel433@gmail.com
+</div>
+
+## Projetos
+
+- [chat-tcp-multiusuario](https://github.com/jonasssgabriel/chat-tcp-multiusuario): chat TCP em Java
+- [aplicacao-tres-camadas-docker](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker): Nginx, API e Redis com Docker
+- [analise-vendas-knime](https://github.com/jonasssgabriel/analise-vendas-knime): análise de vendas com KNIME
+- [sort-lab](https://github.com/jonasssgabriel/sort-lab): comparação de algoritmos de ordenação
+- [mapa-do-armazenamento](https://github.com/jonasssgabriel/mapa-do-armazenamento): scanner de disco em Python
+- [MongoDB-Jonas-Lucas](https://github.com/jonasssgabriel/MongoDB-Jonas-Lucas): lista de tarefas com Python e MongoDB
+
+<div align="center">
+
+<a href="mailto:jonassgabriel433@gmail.com"><img src="https://img.shields.io/badge/Email-ffd800?style=for-the-badge&logo=gmail&logoColor=05060f" alt="Email"/></a>
+
+</div>

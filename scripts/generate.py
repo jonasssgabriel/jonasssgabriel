@@ -1,137 +1,100 @@
-"""Gera assets/header.svg e assets/commits.svg do README.
+"""Gera assets/header.svg (banner estilo arcade com letras de pixel).
 
-Uso: python scripts/generate.py cal.json
-cal.json vem de: gh api graphql (contributionCalendar do usuario)
+Uso: python scripts/generate.py
 """
-import json
-import random
-import sys
-from datetime import date
-from xml.sax.saxutils import escape
+import math
 
-PAPER = "#efe9dc"
-INK = "#22201c"
-BLUE = "#2748a8"
-MARK = "#f6d84c"
-RULE = "#c7d3e4"
-MUTED = "#6f6a5e"
-MONO = "'Courier New',Courier,monospace"
-SERIF = "Georgia,'Times New Roman',serif"
-CW = 12  # largura de um caractere monoespacado a 20px
+G = {
+    "J": ["00111", "00010", "00010", "00010", "00010", "10010", "01100"],
+    "O": ["01110", "10001", "10001", "10001", "10001", "10001", "01110"],
+    "N": ["10001", "11001", "10101", "10101", "10011", "10001", "10001"],
+    "A": ["01110", "10001", "10001", "11111", "10001", "10001", "10001"],
+    "S": ["01111", "10000", "10000", "01110", "00001", "00001", "11110"],
+    "G": ["01110", "10001", "10000", "10111", "10001", "10001", "01110"],
+    "B": ["11110", "10001", "10001", "11110", "10001", "10001", "11110"],
+    "R": ["11110", "10001", "10001", "11110", "10100", "10010", "10001"],
+    "I": ["01110", "00100", "00100", "00100", "00100", "00100", "01110"],
+    "E": ["11111", "10000", "10000", "11110", "10000", "10000", "11111"],
+    "L": ["10000", "10000", "10000", "10000", "10000", "10000", "11111"],
+    "D": ["11110", "10001", "10001", "10001", "10001", "10001", "11110"],
+    "U": ["10001", "10001", "10001", "10001", "10001", "10001", "01110"],
+    "X": ["10001", "10001", "01010", "00100", "01010", "10001", "10001"],
+    "A": ["01110", "10001", "10001", "11111", "10001", "10001", "10001"],
+}
+
+YELLOW = "#ffd800"
+BLUE = "#2121de"
+WHITE = "#e9e9f2"
+DOT = "#ffb8ae"
 
 
-def mono(x, y, s, size=20, fill=INK, extra=""):
-    w = len(s) * size * 0.6
-    return (f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="{size}" fill="{fill}" '
-            f'textLength="{w:.0f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve" {extra}>{escape(s)}</text>')
+def pixels(text, x, y, cell, fill, gap=1, space=3):
+    rects, cx = [], x
+    for ch in text:
+        if ch == " ":
+            cx += space * cell
+            continue
+        for r, row in enumerate(G[ch]):
+            for c, b in enumerate(row):
+                if b == "1":
+                    rects.append(f'<rect x="{cx + c * cell}" y="{y + r * cell}" width="{cell}" height="{cell}"/>')
+        cx += (5 + gap) * cell
+    return f'<g fill="{fill}" shape-rendering="crispEdges">{"".join(rects)}</g>', cx - x
+
+
+def pac_path(deg):
+    r = 13
+    a = math.radians(deg)
+    x, y = r * math.cos(a), r * math.sin(a)
+    return f"M0 0L{x:.2f} {-y:.2f}A{r} {r} 0 1 0 {x:.2f} {y:.2f}Z"
+
+
+def ghost(color, dx):
+    return (f'<g transform="translate({dx} 0)"><path d="M-12 13V-1A12 12 0 0 1 12 -1V13L8 9L4 13L0 9L-4 13L-8 9Z" fill="{color}"/>'
+            '<circle cx="-4.5" cy="-3" r="3.6" fill="#fff"/><circle cx="4.5" cy="-3" r="3.6" fill="#fff"/>'
+            f'<circle cx="-3" cy="-3" r="1.8" fill="{BLUE}"/><circle cx="6" cy="-3" r="1.8" fill="{BLUE}"/></g>')
 
 
 def header():
-    W, H = 900, 340
-    lines = [
-        "Estudo Ciência da Computação em Palmas, Tocantins.",
-        "Hoje o foco é IA: agentes, workflows e o jeito certo de",
-        "usar isso dentro de projetos. Mas o que mais me prende",
-        "é a parte de experiência e design, de como a coisa é de usar.",
-    ]
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-           f'role="img" aria-label="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Hoje o foco é IA, agentes e workflows, mas o que mais me prende é experiência e design.">']
-    out.append("""<style>
-.hl{transform-box:fill-box;transform-origin:left center;animation:swipe .7s .25s cubic-bezier(.3,.7,.2,1) both}
-@keyframes swipe{from{transform:scaleX(0) rotate(-1deg)}to{transform:scaleX(1) rotate(-1deg)}}
-.pen{stroke-dasharray:1;stroke-dashoffset:1;animation:ink 1.1s 1.1s ease-out forwards}
-@keyframes ink{to{stroke-dashoffset:0}}
-@media (prefers-reduced-motion:reduce){.hl,.pen{animation:none;stroke-dashoffset:0}}
-</style>""")
-    out.append(f"""<defs>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .17  0 0 0 0 .1  0 0 0 .09 0"/></filter>
-<filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
-</defs>""")
-    out.append(f'<rect width="{W}" height="{H}" rx="4" fill="{PAPER}"/>')
-    for k in range(8):
-        y = 82 + 32 * k
-        out.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="{RULE}" stroke-width="1.2"/>')
-    out.append(f'<line x1="76" y1="0" x2="76" y2="{H}" stroke="#e39a9a" stroke-width="1.4"/>')
-    out.append(f'<rect width="{W}" height="{H}" rx="4" filter="url(#grain)"/>')
-    # fita no canto
-    out.append('<rect x="760" y="-8" width="120" height="34" fill="#d8cfb4" opacity=".85" transform="rotate(8 820 10)"/>')
-    # titulo com marca-texto
-    out.append(f'<rect class="hl" x="494" y="72" width="214" height="46" fill="{MARK}" opacity=".85" filter="url(#rough)"/>')
-    out.append(f'<text x="100" y="110" font-family="{SERIF}" font-size="54" font-weight="700" fill="{INK}" textLength="378" lengthAdjust="spacingAndGlyphs">Oi, eu sou o</text>')
-    out.append(f'<text x="502" y="110" font-family="{SERIF}" font-size="54" font-weight="700" fill="{INK}" textLength="196" lengthAdjust="spacingAndGlyphs">Jonas.</text>')
-    base = [174, 206, 238, 270]
-    for s, y in zip(lines, base):
-        out.append(mono(100, y, s))
-    def pen(li, first, last, y, seed):
-        i0 = lines[li].index(first)
-        i1 = lines[li].index(last) + len(last)
-        x1, x2 = 100 + i0 * CW, 100 + i1 * CW
-        m = (x1 + x2) // 2
-        out.append(f'<path class="pen" style="animation-delay:{1.1+seed*.5}s" pathLength="1" d="M{x1} {y} C{x1+(m-x1)//2} {y+4} {m} {y-3} {m+(x2-m)//2} {y+2} S{x2-10} {y} {x2} {y+3}" '
-                   f'fill="none" stroke="{BLUE}" stroke-width="2.4" stroke-linecap="round" filter="url(#rough)"/>')
-    pen(1, "agentes", "workflows", 211, 0)
-    pen(3, "experiência e design", "experiência e design", 275, 1)
-    out.append(f'<text x="100" y="312" font-family="{SERIF}" font-style="italic" font-size="19" fill="{BLUE}" transform="rotate(-.8 100 312)">ps: também mexo com site, API, banco, dados e rede.</text>')
-    out.append(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="4" fill="none" stroke="#cdc3aa"/>')
-    out.append("</svg>")
-    return "\n".join(out)
+    W, H = 900, 270
+    name, nw = pixels("JONAS GABRIEL", 0, 0, 9, YELLOW)
+    ox = (W - nw) // 2
+    name = name.replace('<g ', f'<g transform="translate({ox} 52)" ', 1)
+    sub, sw = pixels("IA  UX  DADOS", 0, 0, 4, WHITE)
+    sub = sub.replace('<g ', f'<g transform="translate({(W - sw) // 2} 140)" ', 1)
 
-
-def commits(cal):
-    weeks = cal["weeks"]
-    total = cal["totalContributions"]
-    step, size = 15, 11
-    gx, gy = 64, 96
-    W = gx + len(weeks) * step + 36
-    H = 290
-    lvl = {"NONE": None, "FIRST_QUARTILE": "#f3e08c", "SECOND_QUARTILE": "#ecc43a",
-           "THIRD_QUARTILE": "#d99a14", "FOURTH_QUARTILE": INK}
-    days = sum(1 for w in weeks for d in w["contributionDays"] if d["contributionCount"] > 0)
-    best = max(d["contributionCount"] for w in weeks for d in w["contributionDays"])
-    rnd = random.Random(7)
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-         f'aria-label="{total} commits no último ano, em {days} dias diferentes">']
-    o.append("""<style>
-.c{opacity:0;animation:pop .35s ease-out forwards}
-@keyframes pop{from{opacity:0}to{opacity:1}}
-@media (prefers-reduced-motion:reduce){.c{animation:none;opacity:1}}
-</style>""")
-    o.append(f"""<defs>
-<pattern id="gp" x="{gx}" y="{gy}" width="{step}" height="{step}" patternUnits="userSpaceOnUse"><path d="M{step} 0H0V{step}" fill="none" stroke="{RULE}" stroke-width="1"/></pattern>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .17  0 0 0 0 .1  0 0 0 .09 0"/></filter>
-</defs>""")
-    o.append(f'<rect width="{W}" height="{H}" rx="4" fill="{PAPER}"/>')
-    o.append(f'<rect x="{gx}" y="{gy}" width="{len(weeks)*step}" height="{7*step}" fill="url(#gp)"/>')
-    o.append(f'<rect width="{W}" height="{H}" rx="4" filter="url(#grain)"/>')
-    o.append(mono(gx, 46, "commits do último ano", 20))
-    o.append(mono(gx, 70, f"{total} commits em {days} dias diferentes", 14, MUTED))
-    for i, name in ((1, "seg"), (3, "qua"), (5, "sex")):
-        o.append(mono(22, gy + i * step + 9, name, 11, MUTED))
-    last_m = None
-    for ci, w in enumerate(weeks):
-        d0 = date.fromisoformat(w["firstDay"])
-        if d0.month != last_m and d0.day <= 14:
-            names = "jan fev mar abr mai jun jul ago set out nov dez".split()
-            o.append(mono(gx + ci * step, gy - 8, names[d0.month - 1], 11, MUTED))
-            last_m = d0.month
-        for d in w["contributionDays"]:
-            col = lvl[d["contributionLevel"]]
-            if not col:
-                continue
-            x = gx + ci * step + 2 + rnd.uniform(-.6, .6)
-            y = gy + d["weekday"] * step + 2 + rnd.uniform(-.6, .6)
-            r = rnd.uniform(-4, 4)
-            o.append(f'<rect class="c" style="animation-delay:{ci*0.025:.2f}s" x="{x:.1f}" y="{y:.1f}" width="{size}" height="{size}" '
-                     f'rx="2" fill="{col}" transform="rotate({r:.1f} {x+size/2:.1f} {y+size/2:.1f})"/>')
-    fy = gy + 7 * step + 34
-    o.append(f'<text x="{gx}" y="{fy}" font-family="{SERIF}" font-style="italic" font-size="17" fill="{BLUE}">cada quadrado é um dia, o mais escuro foi o dia de {best} commits.</text>')
-    o.append(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="4" fill="none" stroke="#cdc3aa"/>')
-    o.append("</svg>")
-    return "\n".join(o)
+    x0, x1, n = 66, 834, 30
+    step = (x1 - x0) / (n - 1)
+    cycle, run = 10.0, 7.5
+    css = ["@media (prefers-reduced-motion:reduce){.pm,.dot{animation:none!important}}"]
+    dots = []
+    for i in range(n):
+        t = (i * step) / (x1 - x0) * run / cycle * 100
+        css.append(f"@keyframes d{i}{{0%,{t:.2f}%{{opacity:1}}{t + .1:.2f}%,99.9%{{opacity:0}}100%{{opacity:1}}}}")
+        dots.append(f'<rect class="dot" style="animation:d{i} {cycle}s linear infinite" x="{x0 + i * step - 2.5:.1f}" y="212.5" width="5" height="5" fill="{DOT}"/>')
+    travel = x1 - x0
+    pct = run / cycle * 100
+    css.append(f".pm{{animation:go {cycle}s linear infinite}}")
+    css.append(f"@keyframes go{{0%{{transform:translateX(0);opacity:1}}{pct:.2f}%{{transform:translateX({travel}px);opacity:1}}"
+               f"{pct + .1:.2f}%,100%{{transform:translateX({travel}px);opacity:0}}}}")
+    o, c = pac_path(36), pac_path(2)
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Jonas Gabriel. IA, UX, dados.">
+<style>{"".join(css)}</style>
+<defs><clipPath id="maze"><rect x="16" y="16" width="{W-32}" height="{H-32}" rx="6"/></clipPath></defs>
+<rect width="{W}" height="{H}" rx="14" fill="#05060f"/>
+<rect x="7" y="7" width="{W-14}" height="{H-14}" rx="10" fill="none" stroke="{BLUE}" stroke-width="3"/>
+<rect x="15" y="15" width="{W-30}" height="{H-30}" rx="6" fill="none" stroke="{BLUE}" stroke-width="1.2" opacity=".7"/>
+{name}
+{sub}
+{"".join(dots)}
+<g clip-path="url(#maze)"><g transform="translate({x0} 215)"><g class="pm">
+<g>{ghost("#ff3b3b", -62)}</g><g>{ghost("#3de1ff", -104)}</g>
+<path fill="{YELLOW}" d="{o}"><animate attributeName="d" dur=".36s" repeatCount="indefinite" values="{o};{c};{o}"/></path>
+</g></g></g>
+</svg>'''
+    return svg
 
 
 if __name__ == "__main__":
-    cal = json.load(open(sys.argv[1]))["data"]["user"]["contributionsCollection"]["contributionCalendar"]
     open("assets/header.svg", "w", encoding="utf-8").write(header())
-    open("assets/commits.svg", "w", encoding="utf-8").write(commits(cal))
     print("ok")
