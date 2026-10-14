@@ -3,9 +3,9 @@ Estudo Ciência da Computação no CEULP/ULBRA, em Palmas (TO).
 Meu foco agora é IA e agentes: descobrir como usar isso dentro de projetos de verdade, onde ajuda e onde não vale a pena. Também gosto muito de experiência do usuário e design. Fora isso continuo mexendo com web, banco de dados, análise de dados e redes.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=3">
-  <img alt="Pac-Man comendo os commits do último ano" src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=3">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg?v=4">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=4">
+  <img alt="Pac-Man comendo os commits do último ano" src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=4">
 </picture>
 
 ## Projetos
