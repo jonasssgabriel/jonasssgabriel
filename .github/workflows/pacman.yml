@@ -18,6 +18,12 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           games: 'pacman,breakout,galaga'
 
+      - name: recolorir para a paleta do banner
+        run: |
+          for f in dist/*-dark.svg; do
+            sed -i               -e 's/#0d1117/#0b0620/g'               -e 's/#161b22/#1c1245/g'               -e 's/#0e4429/#4a2fb5/g'               -e 's/#006d32/#8a3cff/g'               -e 's/#26a641/#ff3ea5/g'               -e 's/#39d353/#ffd800/g'               -e 's/#8b949e/#9a8cff/g' "$f"
+          done
+
       - name: publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
