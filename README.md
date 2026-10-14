@@ -1,40 +1,103 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=220&section=header&text=Jonas%20Gabriel&fontSize=40&fontColor=0d1117&fontAlignY=35&desc=Palmas%2C%20Tocantins&descAlignY=58&descSize=18"/>
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&pause=1200&color=FDE047&background=00000000&center=true&vCenter=true&width=560&height=40&lines=Intelig%C3%AAncia+artificial+e+agentes;Experi%C3%AAncia+do+usu%C3%A1rio+e+design;Desenvolvimento+web+e+an%C3%A1lise+de+dados"/>
-
-</div>
-
-<br>
-
-Estudante de Ciência da Computação no CEULP/ULBRA, em Palmas (TO).
-
-Atualmente concentro meus estudos em inteligência artificial e agentes, com ênfase na aplicação dessas tecnologias em projetos reais. Tenho especial interesse em experiência do usuário e design, e também atuo em desenvolvimento web, bancos de dados, análise de dados e redes de computadores.
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg?v=5">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=5">
-  <img alt="Pac-Man comendo os commits do último ano" src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=5">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img alt="Jonas Gabriel, estudante de Ciência da Computação em Palmas, TO. Desenvolvimento web, mobile e sistemas." src="assets/hero-light.svg" width="100%">
 </picture>
 
-## Projetos
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sec-sobre-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sec-sobre-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sec-sobre-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/sec-sobre-light.svg">
+  <img alt="01 Sobre" src="assets/sec-sobre-light.svg" width="100%">
+</picture>
 
-- [RegEx Elite](https://github.com/jonasssgabriel/ConjuntosRegularesSystem): aplicação web didática sobre linguagens regulares e expressões regulares, desenvolvida em grupo para a disciplina de Linguagens Formais. [Demo](https://jonasssgabriel.github.io/ConjuntosRegularesSystem/)
-- [PDV Web](https://github.com/jonasssgabriel/pdv-web): ponto de venda executado no navegador, com impressão térmica em papel de 80 mm. [Demo](https://jonasssgabriel.github.io/pdv-web/)
-- [Aplicação em três camadas com Docker](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker): frontend em Nginx, API interna e Redis atrás de proxy reverso, com rede isolada.
-- [Chat TCP multiusuário](https://github.com/jonasssgabriel/chat-tcp-multiusuario): cliente e servidor em Java com sockets, pool de threads e protocolo em JSON.
-- [Simulador de tráfego](https://github.com/jonasssgabriel/trafic-control): simulador em PHP executado no terminal, com semáforos e detecção de colisão.
-- [Sistema de tarefas](https://github.com/jonasssgabriel/MongoDB-Jonas-Lucas): aplicação em Python com MongoDB Atlas, com busca por status e por tag.
+Estudo Ciência da Computação no CEULP/ULBRA, em Palmas (TO), e desenvolvo software: aplicações web, aplicativos mobile, sistemas e projetos próprios. Hoje divido o tempo entre o **MedLocate**, um aplicativo para encontrar serviços de saúde na cidade, e o **SoluCode OS**, um sistema interno que coordena agentes de IA.
 
-Os demais projetos estão disponíveis na aba de [repositórios](https://github.com/jonasssgabriel?tab=repositories).
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sec-projetos-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sec-projetos-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sec-projetos-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/sec-projetos-light.svg">
+  <img alt="02 Projetos" src="assets/sec-projetos-light.svg" width="100%">
+</picture>
 
-## Tecnologias
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/plate-medlocate-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/plate-medlocate-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-medlocate-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/plate-medlocate-light.svg">
+  <img alt="01 MedLocate. Aplicativo mobile." src="assets/plate-medlocate-light.svg" width="100%">
+</picture>
 
-Java, Python, TypeScript, PHP, React, Node.js, Docker, MongoDB, Figma, KNIME e Power BI.
+`React Native` `Expo` `Node.js` `PostgreSQL` `GitHub Actions`
 
-## Contato
+Aplicativo para encontrar unidades de saúde e farmácias de Palmas (UBS, USF, UPA, hospitais e farmácias). Mostra no mapa o que está por perto, permite buscar por região, avaliar, favoritar e avisar quando um dado está incorreto. Projeto acadêmico em equipe, com API própria e integração contínua. O repositório é privado.
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/plate-solucode-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/plate-solucode-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-solucode-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/plate-solucode-light.svg">
+  <img alt="02 SoluCode OS. Sistema interno." src="assets/plate-solucode-light.svg" width="100%">
+</picture>
+
+`TypeScript` `Claude Code` `Codex`
+
+Sistema interno da SoluCode, hoje em fase de pesquisa e arquitetura: Command Center, base de conhecimento, documentação viva e coordenação de agentes de IA, com decisões registradas em formato ADR. O repositório é privado.
+
+**Outros trabalhos**
+
+- **RegEx Elite**: aplicação web didática sobre linguagens regulares e expressões regulares, feita em grupo para Linguagens Formais. [Código](https://github.com/jonasssgabriel/ConjuntosRegularesSystem) | [Demo](https://jonasssgabriel.github.io/ConjuntosRegularesSystem/)
+- **PDV Web**: ponto de venda executado no navegador, com impressão térmica em papel de 80 mm e dados no LocalStorage. [Código](https://github.com/jonasssgabriel/pdv-web) | [Demo](https://jonasssgabriel.github.io/pdv-web/)
+- **Aplicação em três camadas com Docker**: frontend em Nginx, API interna e Redis atrás de proxy reverso, com rede isolada. [Código](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker)
+- **Chat TCP multiusuário**: cliente e servidor em Java com sockets, pool de threads e protocolo em JSON. [Código](https://github.com/jonasssgabriel/chat-tcp-multiusuario)
+- **Classificador de roupas com CNN**: rede neural convolucional com TensorFlow e Keras e interface em Gradio, feita em dupla. [Código](https://github.com/Luckleal/reconhecimento-roupas-cnn)
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sec-stack-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sec-stack-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sec-stack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/sec-stack-light.svg">
+  <img alt="03 Stack" src="assets/sec-stack-light.svg" width="100%">
+</picture>
+
+- **Linguagens:** `TypeScript` `JavaScript` `Python` `Java` `PHP`
+- **Web e mobile:** `React` `React Native` `Expo` `Vite` `HTML` `CSS`
+- **Back-end e dados:** `Node.js` `PostgreSQL` `MongoDB` `Redis` `KNIME`
+- **Infraestrutura:** `Docker` `Nginx` `GitHub Actions` `Git`
+- **IA:** `Claude Code` `Codex` `TensorFlow` `Keras` `Gradio`
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sec-atividade-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sec-atividade-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sec-atividade-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/sec-atividade-light.svg">
+  <img alt="04 Atividade" src="assets/sec-atividade-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg?v=6">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=6">
+  <img alt="Pac-Man comendo os commits do último ano" src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph.svg?v=6" width="100%">
+</picture>
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sec-contato-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sec-contato-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sec-contato-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/sec-contato-light.svg">
+  <img alt="05 Contato" src="assets/sec-contato-light.svg" width="100%">
+</picture>
 
 [jonassgabriel433@gmail.com](mailto:jonassgabriel433@gmail.com)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=120&section=footer"/>
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/footer-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/footer-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
+  <img alt="Jonas Gabriel, Palmas, Tocantins" src="assets/footer-light.svg" width="100%">
+</picture>

@@ -18,6 +18,17 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           games: 'pacman'
 
+      - name: recolorir na paleta do perfil
+        run: |
+          for f in dist/*.svg; do
+            sed -i \
+              -e 's/#0d1117/#0e1218/g' -e 's/#161b22/#171f2d/g' -e 's/#0e4429/#1f3d73/g' \
+              -e 's/#006d32/#2f66c4/g' -e 's/#26a641/#5b9bff/g' -e 's/#39d353/#b0cdff/g' \
+              -e 's/#8b949e/#8795ad/g' -e 's/#ffffff/#fafbfd/g' -e 's/#ebedf0/#e7edf6/g' \
+              -e 's/#9be9a8/#c0d4f8/g' -e 's/#40c463/#84a9ef/g' -e 's/#30a14e/#4580e2/g' \
+              -e 's/#216e39/#1d5fe0/g' -e 's/#57606a/#566275/g' -e 's/#000000/#0f1623/g' "$f"
+          done
+
       - name: publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
