@@ -16,7 +16,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
         with:
           github_user_name: ${{ github.repository_owner }}
-          games: 'pacman'
+          games: 'pacman,breakout,galaga'
 
       - name: publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
