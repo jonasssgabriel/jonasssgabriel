@@ -22,6 +22,11 @@ G = {
     "D": ["11110", "10001", "10001", "10001", "10001", "10001", "11110"],
     "U": ["10001", "10001", "10001", "10001", "10001", "10001", "01110"],
     "X": ["10001", "10001", "01010", "00100", "01010", "10001", "10001"],
+    "P": ["11110", "10001", "10001", "11110", "10000", "10000", "10000"],
+    "T": ["11111", "00100", "00100", "00100", "00100", "00100", "00100"],
+    "C": ["01110", "10001", "10000", "10000", "10000", "10001", "01110"],
+    "K": ["10001", "10010", "10100", "11000", "10100", "10010", "10001"],
+    "M": ["10001", "11011", "10101", "10101", "10001", "10001", "10001"],
 }
 
 YELLOW, CYAN, MAGENTA, DOT = "#ffd800", "#38e8ff", "#ff3ea5", "#ffb8ae"
@@ -160,6 +165,21 @@ def banner():
 </svg>'''
 
 
+def button(label, color, filled=False):
+    w, h, cell = 200, 48, 3
+    glyphs, tw = pixels(label, cell)
+    tx, ty = 52 + (w - 52 - 18 - tw) // 2, (h - 7 * cell) // 2
+    fg = "#0b0620" if filled else color
+    bg = color if filled else "#0b0620"
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{label.title()}">
+<rect x="1.5" y="1.5" width="{w-3}" height="{h-3}" rx="8" fill="{bg}" stroke="{color}" stroke-width="3"/>
+<polygon points="20,{h/2-8} 20,{h/2+8} 34,{h/2}" fill="{fg}"/>
+<g transform="translate({tx} {ty})" fill="{fg}" shape-rendering="crispEdges">{glyphs}</g>
+</svg>'''
+
+
 if __name__ == "__main__":
+    for name, label, col, fill in (("projetos", "PROJETOS", CYAN, False), ("stack", "STACK", MAGENTA, False), ("email", "EMAIL", YELLOW, True)):
+        open(f"assets/btn-{name}.svg", "w", encoding="utf-8").write(button(label, col, fill))
     open("assets/hero.svg", "w", encoding="utf-8").write(banner())
     print("ok")
