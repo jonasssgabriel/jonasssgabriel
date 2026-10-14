@@ -15,14 +15,14 @@ Foco atual em IA e agentes, com interesse em experiência e design.
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man comendo os commits"/>
+<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/pacman-contribution-graph-dark.svg?v=2" width="100%" alt="Pac-Man comendo os commits"/>
 
 <details>
 <summary><b>Trocar de jogo</b></summary>
 <br>
-<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/breakout-contribution-graph-dark.svg" width="100%" alt="Breakout nos commits"/>
+<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/breakout-contribution-graph-dark.svg?v=2" width="100%" alt="Breakout nos commits"/>
 <br>
-<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/galaga-contribution-graph-dark.svg" width="100%" alt="Galaga nos commits"/>
+<img src="https://raw.githubusercontent.com/jonasssgabriel/jonasssgabriel/output/galaga-contribution-graph-dark.svg?v=2" width="100%" alt="Galaga nos commits"/>
 </details>
 
 </div>
