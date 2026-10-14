@@ -21,7 +21,7 @@ PAL = {
                   text="#0f1623", muted="#566275", blue="#1d5fe0", blue2="#4b83ee"),
 }
 
-BASE_CSS = (".static{display:none}"
+BASE_CSS = (".once{display:none}"
             ".draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s .15s cubic-bezier(.3,.7,.2,1) forwards}"
             "@keyframes draw{to{stroke-dashoffset:0}}"
             ".fade{opacity:0;animation:fade .9s ease-out forwards}@keyframes fade{to{opacity:1}}"
@@ -31,9 +31,8 @@ BASE_CSS = (".static{display:none}"
             ".flow{stroke-dasharray:4 7;animation:flow 1.6s linear infinite}@keyframes flow{to{stroke-dashoffset:-22}}"
             ".bob{animation:bob 4s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-4px)}}")
 
-REDUCED = ("@media (prefers-reduced-motion:reduce){.fade{opacity:1!important;animation:none!important}"
-           ".draw{animation:none!important;stroke-dashoffset:0!important}"
-           ".ring,.flow,.bob,.cur{animation:none!important}.live{display:none}.static{display:inline}}")
+REDUCED = ("@media (prefers-reduced-motion:reduce){"
+           ".ring,.flow,.bob,.cur{animation:none!important}.live{display:none}.once{display:inline}}")
 
 
 def esc(s):
@@ -125,8 +124,16 @@ def hero(mode, mobile=False):
     body.append(f'<g class="live">{"".join(live)}</g>')
     t0, n0 = LINES[0][0], len(LINES[0][0])
     w0 = n0 * CW
-    body.append(f'<g class="static"><text x="{x0}" y="{yb}" font-family="{MONO}" font-size="{FS}" font-weight="600" fill="{P["text"]}" textLength="{w0:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve">{esc(t0)}</text>'
-                f'<path d="M{x0} {yb+18}H{x0+w0:.1f}M{x0} {yb+12}v12M{x0+w0:.1f} {yb+12}v12" stroke="{P["blue"]}" stroke-width="1.4" fill="none"/></g>')
+    a0, b0 = 0.4, 0.4 + n0 * t_per
+    ts = [0.0] + [(j * t_per) / (b0 - a0) for j in range(1, n0 + 1)]
+    ts = [min(v, 1.0) for v in ts]
+    ts[-1] = 1.0
+    kt1 = ";".join(f(v) for v in ts[:-1]) + ";1"
+    wv1 = ";".join(f(j * CW) for j in range(0, n0 + 1))
+    durn = f'begin="0.4s" dur="{n0 * t_per:.2f}s" repeatCount="1" fill="freeze" calcMode="discrete"'
+    body.append(f'<g class="once"><clipPath id="cpo"><rect x="{x0}" y="{yb-FS}" width="0" height="{FS+24}"><animate attributeName="width" {durn} keyTimes="{kt1}" values="{wv1}"/></rect></clipPath>'
+                f'<g clip-path="url(#cpo)"><text x="{x0}" y="{yb}" font-family="{MONO}" font-size="{FS}" font-weight="600" fill="{P["text"]}" textLength="{w0:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve">{esc(t0)}</text>'
+                f'<path d="M{x0} {yb+18}H{x0+w0:.1f}M{x0} {yb+12}v12M{x0+w0:.1f} {yb+12}v12" stroke="{P["blue"]}" stroke-width="1.4" fill="none"/></g></g>')
     bx, by = W - 30 - bw, H - 30 - bh
     rows = (("AUTOR", "Jonas Gabriel"), ("CURSO", "Ciência da Computação"), ("LOCAL", "Palmas, Tocantins"))
     rh = bh / 3
