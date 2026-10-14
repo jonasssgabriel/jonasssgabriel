@@ -21,8 +21,7 @@ PAL = {
                   text="#0f1623", muted="#566275", blue="#1d5fe0", blue2="#4b83ee"),
 }
 
-BASE_CSS = (".once{display:none}"
-            ".draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s .15s cubic-bezier(.3,.7,.2,1) forwards}"
+BASE_CSS = (".draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s .15s cubic-bezier(.3,.7,.2,1) forwards}"
             "@keyframes draw{to{stroke-dashoffset:0}}"
             ".fade{opacity:0;animation:fade .9s ease-out forwards}@keyframes fade{to{opacity:1}}"
             ".cur{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}"
@@ -31,8 +30,8 @@ BASE_CSS = (".once{display:none}"
             ".flow{stroke-dasharray:4 7;animation:flow 1.6s linear infinite}@keyframes flow{to{stroke-dashoffset:-22}}"
             ".bob{animation:bob 4s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-4px)}}")
 
-REDUCED = ("@media (prefers-reduced-motion:reduce){"
-           ".ring,.flow,.bob,.cur{animation:none!important}.live{display:none}.once{display:inline}}")
+# Sem regra de prefers-reduced-motion de proposito: o dono do perfil quer tudo animado.
+REDUCED = ""
 
 
 def esc(s):
@@ -76,9 +75,9 @@ LINES = [
 def hero(mode, mobile=False):
     P = PAL[mode]
     if mobile:
-        W, H, FS, x0, yb, bw, bh, lab, val, cm = 520, 330, 22, 40, 150, 270, 84, 10.5, 13.5, 40
+        W, H, FS, x0, yb, cm = 520, 240, 22, 40, 116, 40
     else:
-        W, H, FS, x0, yb, bw, bh, lab, val, cm = 900, 360, 38, 64, 186, 300, 84, 10.5, 14, 44
+        W, H, FS, x0, yb, cm = 900, 300, 38, 64, 152, 44
     CW = FS * 0.6
     t_per, e_per, gap = 0.07, 0.022, 0.5
     segs, cur = [], 0.0
@@ -122,30 +121,6 @@ def hero(mode, mobile=False):
         live.append(f'<g class="cur"><rect x="{f(x0 + 5 + (w if full else 0))}" y="{yb-FS+6}" width="{FS*.32:.1f}" height="{FS-2}" fill="{P["blue"]}" opacity="{1 if full else 0}">'
                     f'<animate attributeName="x" {dur} keyTimes="{kt}" values="{xv}"/><animate attributeName="opacity" {dur} keyTimes="{okt}" values="{ov}"/></rect></g>')
     body.append(f'<g class="live">{"".join(live)}</g>')
-    t0, n0 = LINES[0][0], len(LINES[0][0])
-    w0 = n0 * CW
-    a0, b0 = 0.4, 0.4 + n0 * t_per
-    ts = [0.0] + [(j * t_per) / (b0 - a0) for j in range(1, n0 + 1)]
-    ts = [min(v, 1.0) for v in ts]
-    ts[-1] = 1.0
-    kt1 = ";".join(f(v) for v in ts[:-1]) + ";1"
-    wv1 = ";".join(f(j * CW) for j in range(0, n0 + 1))
-    durn = f'begin="0.4s" dur="{n0 * t_per:.2f}s" repeatCount="1" fill="freeze" calcMode="discrete"'
-    body.append(f'<g class="once"><clipPath id="cpo"><rect x="{x0}" y="{yb-FS}" width="0" height="{FS+24}"><animate attributeName="width" {durn} keyTimes="{kt1}" values="{wv1}"/></rect></clipPath>'
-                f'<g clip-path="url(#cpo)"><text x="{x0}" y="{yb}" font-family="{MONO}" font-size="{FS}" font-weight="600" fill="{P["text"]}" textLength="{w0:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve">{esc(t0)}</text>'
-                f'<path d="M{x0} {yb+18}H{x0+w0:.1f}M{x0} {yb+12}v12M{x0+w0:.1f} {yb+12}v12" stroke="{P["blue"]}" stroke-width="1.4" fill="none"/></g></g>')
-    bx, by = W - 30 - bw, H - 30 - bh
-    rows = (("AUTOR", "Jonas Gabriel"), ("CURSO", "Ciência da Computação"), ("LOCAL", "Palmas, Tocantins"))
-    rh = bh / 3
-    tb = [f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" fill="{P["bg"]}" stroke="{P["frame"]}" stroke-width="1.3"/>']
-    for k, (lb, vl) in enumerate(rows):
-        y = by + k * rh
-        if k:
-            tb.append(f'<path d="M{bx} {y}H{bx+bw}" stroke="{P["frame"]}" stroke-width="1"/>')
-        tb.append(f'<text x="{bx+14}" y="{y+rh/2+4}" font-family="{MONO}" font-size="{lab}" letter-spacing="1.2" fill="{P["muted"]}">{lb}</text>'
-                  f'<text x="{bx+88}" y="{y+rh/2+5}" font-family="{SANS}" font-size="{val}" font-weight="600" fill="{P["text"]}">{esc(vl)}</text>')
-    tb.append(f'<path d="M{bx+78} {by}V{by+bh}" stroke="{P["frame"]}" stroke-width="1"/><rect x="{bx}" y="{by}" width="4" height="{bh}" fill="{P["blue"]}"/>')
-    body.append(f'<g class="fade" style="animation-delay:.9s">{"".join(tb)}</g>')
     return svg(W, H, "".join(body), "Jonas Gabriel, estudante de Ciência da Computação em Palmas, TO. Desenvolvimento web, mobile e sistemas.", grid_defs(P))
 
 
