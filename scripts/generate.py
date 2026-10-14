@@ -30,12 +30,12 @@ def header():
     W, H = 900, 340
     lines = [
         "Estudo Ciência da Computação em Palmas, Tocantins.",
-        "Mexo com um pouco de tudo: site, API, banco, dashboard, rede.",
-        "Ultimamente muito com agentes e workflows de IA, testando",
-        "qual o jeito certo de encaixar isso dentro de um projeto.",
+        "Hoje o foco é IA: agentes, workflows e o jeito certo de",
+        "usar isso dentro de projetos. Mas o que mais me prende",
+        "é a parte de experiência e design, de como a coisa é de usar.",
     ]
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-           f'role="img" aria-label="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Mexo com um pouco de tudo e, ultimamente, com agentes e workflows de IA.">']
+           f'role="img" aria-label="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Hoje o foco é IA, agentes e workflows, mas o que mais me prende é experiência e design.">']
     out.append("""<style>
 .hl{transform-box:fill-box;transform-origin:left center;animation:swipe .7s .25s cubic-bezier(.3,.7,.2,1) both}
 @keyframes swipe{from{transform:scaleX(0) rotate(-1deg)}to{transform:scaleX(1) rotate(-1deg)}}
@@ -62,13 +62,16 @@ def header():
     base = [174, 206, 238, 270]
     for s, y in zip(lines, base):
         out.append(mono(100, y, s))
-    # sublinhado a caneta em "agentes e workflows de IA"
-    start = lines[2].index("agentes")
-    end = lines[2].index("IA,") + 2
-    x1, x2 = 100 + start * CW, 100 + end * CW
-    out.append(f'<path class="pen" pathLength="1" d="M{x1} 243 C{x1+60} 247 {x1+120} 240 {x1+190} 245 S{x2-40} 242 {x2} 246" '
-               f'fill="none" stroke="{BLUE}" stroke-width="2.4" stroke-linecap="round" filter="url(#rough)"/>')
-    out.append(f'<text x="100" y="312" font-family="{SERIF}" font-style="italic" font-size="19" fill="{BLUE}" transform="rotate(-.8 100 312)">ps: a ordem dessa lista muda toda semana.</text>')
+    def pen(li, first, last, y, seed):
+        i0 = lines[li].index(first)
+        i1 = lines[li].index(last) + len(last)
+        x1, x2 = 100 + i0 * CW, 100 + i1 * CW
+        m = (x1 + x2) // 2
+        out.append(f'<path class="pen" style="animation-delay:{1.1+seed*.5}s" pathLength="1" d="M{x1} {y} C{x1+(m-x1)//2} {y+4} {m} {y-3} {m+(x2-m)//2} {y+2} S{x2-10} {y} {x2} {y+3}" '
+                   f'fill="none" stroke="{BLUE}" stroke-width="2.4" stroke-linecap="round" filter="url(#rough)"/>')
+    pen(1, "agentes", "workflows", 211, 0)
+    pen(3, "experiência e design", "experiência e design", 275, 1)
+    out.append(f'<text x="100" y="312" font-family="{SERIF}" font-style="italic" font-size="19" fill="{BLUE}" transform="rotate(-.8 100 312)">ps: também mexo com site, API, banco, dados e rede.</text>')
     out.append(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="4" fill="none" stroke="#cdc3aa"/>')
     out.append("</svg>")
     return "\n".join(out)

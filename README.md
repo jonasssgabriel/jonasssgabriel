@@ -1,10 +1,12 @@
-<img src="assets/header.svg" width="100%" alt="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Mexo com um pouco de tudo e, ultimamente, com agentes e workflows de IA."/>
+<img src="assets/header.svg" width="100%" alt="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Hoje o foco é IA, agentes e workflows, mas o que mais me prende é experiência e design."/>
 
 <br>
 
 ## Mexendo agora
 
-Agentes e workflows de IA. Estou testando jeitos de colocar IA dentro de projetos de verdade: onde ela ajuda, onde atrapalha, o que vale automatizar e o que é melhor deixar na mão. Junto com isso, Power BI e KNIME pra dados e um pouco de redes de computadores.
+IA é o que mais me ocupa hoje: agentes, workflows e descobrir o melhor jeito de usar isso em projeto de verdade. Onde ajuda, onde atrapalha, o que vale automatizar e o que é melhor deixar na mão.
+
+Mesmo assim, o que mais me atrai é a parte de experiência e design. Gosto de pensar em como a coisa é de usar, não só se ela funciona, e costumo desenhar a tela no Figma antes de codar. Por fora disso, Power BI e KNIME pra dados e um pouco de redes de computadores.
 
 ## Coisas que fiz
 
