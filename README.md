@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Jonas Gabriel. IA, UX, dados."/>
+<img src="assets/banner.svg" width="100%" alt="Jonas Gabriel. IA, UX, dados."/>
 
 <br>
 
@@ -17,7 +17,7 @@ Foco atual em IA e agentes, com interesse em experiência e design.
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=python,java,ts,react,nodejs,docker,mongodb,figma,powerbi,git&theme=dark" alt="Stack"/>
+<img src="https://skillicons.dev/icons?i=python,java,ts,react,nodejs,docker,mongodb,figma,git&theme=dark" alt="Stack"/>
 
 </div>
 

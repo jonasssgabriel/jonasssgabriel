@@ -1,4 +1,4 @@
-"""Gera assets/header.svg (banner estilo arcade com letras de pixel).
+"""Gera assets/banner.svg (banner estilo arcade com letras de pixel).
 
 Uso: python scripts/generate.py
 """
@@ -96,5 +96,5 @@ def header():
 
 
 if __name__ == "__main__":
-    open("assets/header.svg", "w", encoding="utf-8").write(header())
+    open("assets/banner.svg", "w", encoding="utf-8").write(header())
     print("ok")
