@@ -1,3 +1,13 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=220&section=header&text=Jonas%20Gabriel&fontSize=40&fontColor=0d1117&fontAlignY=35&desc=Palmas%2C%20Tocantins&descAlignY=58&descSize=18"/>
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&pause=1200&color=FDE047&background=00000000&center=true&vCenter=true&width=560&height=40&lines=Estudante+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o;Intelig%C3%AAncia+artificial+e+agentes;Experi%C3%AAncia+do+usu%C3%A1rio+e+design"/>
+
+</div>
+
+<br>
+
 Estudante de Ciência da Computação no CEULP/ULBRA, em Palmas (TO).
 
 Atualmente concentro meus estudos em inteligência artificial e agentes, com ênfase na aplicação dessas tecnologias em projetos reais. Tenho especial interesse em experiência do usuário e design, e também atuo em desenvolvimento web, bancos de dados, análise de dados e redes de computadores.
@@ -26,3 +36,5 @@ Java, Python, TypeScript, PHP, React, Node.js, Docker, MongoDB, Figma, KNIME e P
 ## Contato
 
 [jonassgabriel433@gmail.com](mailto:jonassgabriel433@gmail.com)
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=fde047&height=120&section=footer"/>
