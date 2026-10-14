@@ -1,64 +1,32 @@
-<div align="center">
-
-<img src="assets/header.svg" width="100%" alt="Jonas Gabriel — Dashboards, análise de dados e UI/UX"/>
+<img src="assets/header.svg" width="100%" alt="Oi, eu sou o Jonas. Estudo Ciência da Computação em Palmas, Tocantins. Mexo com um pouco de tudo e, ultimamente, com agentes e workflows de IA."/>
 
 <br>
 
-<a href="mailto:jonassgabriel433@gmail.com"><img src="https://img.shields.io/badge/Gmail-fde047?style=for-the-badge&logo=gmail&logoColor=0d1117"/></a>
-<a href="https://github.com/jonasssgabriel"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=fde047"/></a>
-<img src="https://img.shields.io/badge/Palmas%2C%20TO-0d1117?style=for-the-badge&logo=googlemaps&logoColor=fde047"/>
+## Mexendo agora
 
-</div>
+Agentes e workflows de IA. Estou testando jeitos de colocar IA dentro de projetos de verdade: onde ela ajuda, onde atrapalha, o que vale automatizar e o que é melhor deixar na mão. Junto com isso, Power BI e KNIME pra dados e um pouco de redes de computadores.
 
-<br>
+## Coisas que fiz
 
-## Sobre
+- [chat-tcp-multiusuario](https://github.com/jonasssgabriel/chat-tcp-multiusuario): chat em Java com socket, pool de threads e protocolo JSON
+- [aplicacao-tres-camadas-docker](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker): front no Nginx, API, Redis e proxy reverso, tudo em Docker com rede isolada
+- [analise-vendas-knime](https://github.com/jonasssgabriel/analise-vendas-knime): análise de vendas no KNIME com Python
+- [associacao-data-mining](https://github.com/jonasssgabriel/associacao-data-mining): regras de associação em mineração de dados
+- [sort-lab](https://github.com/jonasssgabriel/sort-lab): compara algoritmos de ordenação em tipos diferentes de entrada
+- [mapa-do-armazenamento](https://github.com/jonasssgabriel/mapa-do-armazenamento): scanner em Python que mostra pra onde foi o espaço do disco
+- [MongoDB-Jonas-Lucas](https://github.com/jonasssgabriel/MongoDB-Jonas-Lucas): lista de tarefas com CRUD, tags e comentários, em Python e MongoDB Atlas
+- [pdv-web](https://github.com/jonasssgabriel/pdv-web): PDV web com impressão térmica
 
-Estudante de Ciência da Computação em Palmas (TO). Já passei por front-end, back-end e UI/UX, mas hoje é com dados que eu mais gosto de trabalhar — principalmente **Power BI** e **KNIME**.
+## O que eu uso
 
-Gosto de fazer as duas pontas: montar a interface do dashboard **e** analisar os dados por trás pra tirar uma conclusão real, não só um gráfico bonito.
-
-<div align="center">
-<img src="assets/pipeline.svg" width="100%" alt="Dados brutos, KNIME, Python, Power BI, decisão"/>
-</div>
-
-<br>
-
-## Painel
-
-<div align="center">
-<img src="assets/dashboard.svg" width="100%" alt="Repositórios, seguidores e linguagens"/>
-</div>
-
-<sub>Linguagens consideram apenas código (HTML/CSS ficam de fora). Snapshot de out/2026.</sub>
+Mais Java, TypeScript, PHP e Python. Pra tela, React com Tailwind e Vite, e Figma quando preciso desenhar antes. Pra API, Node com Express. Pra guardar dado, SQLite e MongoDB. Pra analisar, Power BI, KNIME, SQL e Pandas. Git pra tudo.
 
 <br>
 
-## Projetos
-
-| | |
-|---|---|
-| 📊 [**analise-vendas-knime**](https://github.com/jonasssgabriel/analise-vendas-knime) | Análise de vendas com KNIME e Python |
-| 🔗 [**associacao-data-mining**](https://github.com/jonasssgabriel/associacao-data-mining) | Mineração de regras de associação |
-| 🐳 [**aplicacao-tres-camadas-docker**](https://github.com/jonasssgabriel/aplicacao-tres-camadas-docker) | Frontend Nginx, API, Redis, proxy reverso e rede isolada |
-| 💬 [**chat-tcp-multiusuario**](https://github.com/jonasssgabriel/chat-tcp-multiusuario) | Chat TCP multiusuário em Java com ThreadPool e protocolo JSON |
-| 🧮 [**sort-lab**](https://github.com/jonasssgabriel/sort-lab) | Laboratório para comparar algoritmos de ordenação |
-| 🗂️ [**mapa-do-armazenamento**](https://github.com/jonasssgabriel/mapa-do-armazenamento) | Scanner de uso de disco em Python |
+<img src="assets/commits.svg" width="100%" alt="Gráfico dos commits do último ano"/>
 
 <br>
 
-## Stack
+## Contato
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=powerbi,python,java,ts,js,php,react,vite,tailwind,nodejs,express,sqlite,mongodb,figma,git,docker,vscode&theme=dark&perline=17"/>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=jonasssgabriel&theme=transparent&hide_border=true&ring=fde047&fire=fde047&currStreakLabel=fde047&sideLabels=fde68a&currStreakNum=f0f6fc&sideNums=f0f6fc&dates=8b949e"/>
-
-</div>
+jonassgabriel433@gmail.com
