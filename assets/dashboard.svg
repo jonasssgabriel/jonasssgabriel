@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="Painel com números do GitHub de Jonas Gabriel">
+  <style>
+    text{font-family:'Segoe UI',Arial,sans-serif}
+    .mono{font-family:Consolas,'Courier New',monospace}
+    .card{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+    .in{opacity:0;animation:in .7s ease-out forwards}
+    @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .hb{fill:#fde047;transform-box:fill-box;transform-origin:left;animation:sx 1.2s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes sx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    .dot{animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  </style>
+  <rect width="900" height="360" rx="18" fill="#0d1117"/>
+  <rect x=".75" y=".75" width="898.5" height="358.5" rx="17.5" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <text x="30" y="36" class="mono" font-size="13" fill="#8b949e">// painel.pbix · github.com/jonasssgabriel</text>
+  <g class="in" style="animation-delay:.1s"><rect class="card" x="30" y="56" width="200" height="92" rx="12"/><rect x="30" y="56" width="5" height="92" rx="2.5" fill="#fde047"/><text x="52" y="84" font-size="13" fill="#8b949e">Repositórios públicos</text><text x="52" y="128" font-size="40" font-weight="800" fill="#f0f6fc">21</text></g>
+  <g class="in" style="animation-delay:.2s"><rect class="card" x="245" y="56" width="200" height="92" rx="12"/><rect x="245" y="56" width="5" height="92" rx="2.5" fill="#fde047"/><text x="267" y="84" font-size="13" fill="#8b949e">Seguidores</text><text x="267" y="128" font-size="40" font-weight="800" fill="#f0f6fc">10</text></g>
+  <g class="in" style="animation-delay:.3s"><rect class="card" x="460" y="56" width="200" height="92" rx="12"/><rect x="460" y="56" width="5" height="92" rx="2.5" fill="#fde047"/><text x="482" y="84" font-size="13" fill="#8b949e">Linguagens de código</text><text x="482" y="128" font-size="40" font-weight="800" fill="#f0f6fc">5</text></g>
+  <g class="in" style="animation-delay:.4s"><rect class="card" x="675" y="56" width="195" height="92" rx="12"/><rect x="675" y="56" width="5" height="92" rx="2.5" fill="#fde047"/><text x="697" y="84" font-size="13" fill="#8b949e">No GitHub desde</text><text x="697" y="128" font-size="40" font-weight="800" fill="#f0f6fc">2023</text></g>
+  <g class="in" style="animation-delay:.5s">
+    <rect class="card" x="30" y="165" width="530" height="165" rx="12"/>
+    <text x="52" y="192" font-size="14" font-weight="700" fill="#e6edf3">Linguagens por volume de código</text>
+  </g>
+  <g font-size="13" fill="#c9d1d9">
+    <text x="52" y="219">Java</text><rect x="130" y="208" width="380" height="14" rx="7" fill="#21262d"/><rect class="hb" style="animation-delay:.7s" x="130" y="208" width="160" height="14" rx="7"/><text x="520" y="219" class="mono" fill="#8b949e" font-size="12">42%</text>
+    <text x="52" y="243">TypeScript</text><rect x="130" y="232" width="380" height="14" rx="7" fill="#21262d"/><rect class="hb" style="animation-delay:.8s" x="130" y="232" width="79" height="14" rx="7"/><text x="520" y="243" class="mono" fill="#8b949e" font-size="12">21%</text>
+    <text x="52" y="267">PHP</text><rect x="130" y="256" width="380" height="14" rx="7" fill="#21262d"/><rect class="hb" style="animation-delay:.9s" x="130" y="256" width="79" height="14" rx="7"/><text x="520" y="267" class="mono" fill="#8b949e" font-size="12">21%</text>
+    <text x="52" y="291">Python</text><rect x="130" y="280" width="380" height="14" rx="7" fill="#21262d"/><rect class="hb" style="animation-delay:1s" x="130" y="280" width="52" height="14" rx="7"/><text x="520" y="291" class="mono" fill="#8b949e" font-size="12">14%</text>
+    <text x="52" y="315">JavaScript</text><rect x="130" y="304" width="380" height="14" rx="7" fill="#21262d"/><rect class="hb" style="animation-delay:1.1s" x="130" y="304" width="9" height="14" rx="7"/><text x="520" y="315" class="mono" fill="#8b949e" font-size="12">2%</text>
+  </g>
+  <g class="in" style="animation-delay:.6s">
+    <rect class="card" x="575" y="165" width="295" height="165" rx="12"/>
+    <text x="597" y="192" font-size="14" font-weight="700" fill="#e6edf3">Foco atual</text>
+    <g font-size="14" fill="#c9d1d9">
+      <circle class="dot" cx="602" cy="222" r="5" fill="#fde047"/><text x="618" y="227">Dashboards e modelagem</text>
+      <circle class="dot" style="animation-delay:.4s" cx="602" cy="256" r="5" fill="#fde047"/><text x="618" y="261">IA aplicada à análise</text>
+      <circle class="dot" style="animation-delay:.8s" cx="602" cy="290" r="5" fill="#fde047"/><text x="618" y="295">Engenharia de dados e redes</text>
+    </g>
+  </g>
+</svg>
